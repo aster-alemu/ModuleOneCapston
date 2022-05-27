@@ -42,7 +42,7 @@ Run this project on local device by downloading or cloning the project from GitH
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check and raise an issu the [issues page](../../issues/).
 
 ## Show your support
 
