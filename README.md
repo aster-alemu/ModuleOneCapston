@@ -14,7 +14,6 @@ This is the first module capston project at Microverse.
 To get a local copy up and running follow these simple steps.
 
 1. Clone the Repo or Download the Zip file (git@github.com:aster-alemu/ModuleOneCapstonProject.git)
-2. Run the live server using this link: 
 
 ## Prerequisite
 
