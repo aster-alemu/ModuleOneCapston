@@ -62,7 +62,7 @@
 }
 
 .intro {
-  background-image: url('image/background.png');
+  background-image: url('Image/background.png');
 }
 
 h3 {
@@ -93,16 +93,18 @@ h2 {
 }
 
 .main-program {
-  background-image: url('image/main-program-background.png');
+  background-image: url('Image/angle-puls.png'), linear-gradient(0deg, var(--dark) 50%, var(--dark) 50%);
+  background-repeat: repeat;
   padding-top: 60px;
   padding-bottom: 24px;
 }
 
 .main-program h4 {
-  color: #fff;
+  color: var(--white-smoky);
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 24px;
+  font-family: 'Lato', sans-serif;
 }
 
 .horizontal-line {
@@ -118,10 +120,14 @@ h2 {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-image: url('image/program-bg.JPG');
+  background-color: #d3d3d31e;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 12px;
+}
+
+.card:hover {
+  outline: 2px solid var(--white-smoky);
 }
 
 .card p {
@@ -169,7 +175,7 @@ h5 {
 .speakers-info {
   display: grid;
   grid-template-columns: auto auto;
-  background-image: url('image/case-speaker-bg.png');
+  background-image: url('Image/case-speaker-bg.png');
   background-repeat: no-repeat;
   margin-bottom: 100px;
   margin-left: 25px;
@@ -198,12 +204,12 @@ h5 {
 }
 
 .section-title-separators {
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--orange);
   width: 48px;
   margin-left: 10px;
   margin-bottom: 10px;
   position: relative;
-  left: 250px;
+  left: 240px;
   bottom: 30px;
   text-align: center;
 }
@@ -285,12 +291,17 @@ h5 {
   display: none;
 }
 
+.support-team {
+  background-color: var(--dark-whiten);
+}
+
 .support-section-titles {
   color: var(--dark);
   text-align: center;
   margin-top: 48px;
   margin-bottom: 48px;
   font-family: 'Lato', sans-serif;
+  font-size: 24px;
 }
 
 .section-titles {
@@ -301,14 +312,14 @@ h5 {
 }
 
 .support-item {
-  background-color: #fff;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  padding-top: -10px;
 }
 
 .avator {
-  background-image: url('image/case-speaker-bg.png');
+  background-image: url('Image/case-speaker-bg.png');
   width: 100px;
   height: 80px;
 }
@@ -322,7 +333,15 @@ h5 {
   padding-right: 12px;
 }
 
+.support-item .biography {
+  padding-top: 1px;
+  padding-left: 1px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+}
+
 .biography h3 {
+  padding-top: 1px;
   padding-bottom: 7px;
   margin-left: 30px;
   margin-top: 0;
@@ -334,6 +353,7 @@ h5 {
   margin-left: 40px;
   margin-top: 0;
   margin-bottom: 1px;
+  font-family: 'Lato', sans-serif;
 }
 
 .job-title {
@@ -341,7 +361,7 @@ h5 {
 }
 
 .support-info-separator {
-  width: 48px;
+  width: 30px;
   margin-left: 40px;
   border: 0.1px solid #d3d3d3;
 }
@@ -355,7 +375,7 @@ h5 {
 }
 
 .about-section {
-  background-image: url('image/background.png');
+  background-image: url('Image/background.png');
 }
 
 .body-section h1 {
@@ -446,8 +466,8 @@ h5 {
 }
 
 .cover-image {
-  background-image: url("Image/brida-image-one.png");
-  background-color: #ccc;
+  /* background-image: url("Image/brida-image-one.png");
+  background-color: #ccc; */
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -459,12 +479,16 @@ h5 {
 }
 
 .cover-text {
+  background-image: linear-gradient(to right, rgba(238, 61, 17, 0.6), rgba(238, 61, 17, 0.6)), url('Image/brida-image-one.png');
   text-align: center;
   color: #fff;
+  font-weight: 700;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
 }
 
 .heading-pre-work {
@@ -473,11 +497,11 @@ h5 {
   font-size: 36px;
 }
 
-.cover {
+/* .cover {
   background-image: url("Image/bayshower-image-two.png");
   filter: blur(1px);
   -webkit-filter: blur(1px);
-}
+} */
 
 .about-partner {
   background-color: #272a31;
@@ -666,7 +690,7 @@ h5 {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    background-image: url('image/program-bg.JPG');
+    background-color: #d3d3d31e;
     width: 150px;
     margin-left: 2px;
     margin-right: 1px;
@@ -702,6 +726,7 @@ h5 {
     font-size: 12px;
     text-align: center;
     padding-bottom: 12px;
+    color: var(--white-smoky);
   }
 
   .card img {
@@ -714,15 +739,17 @@ h5 {
 
   .see-whole-program {
     display: block;
-    text-align: center;
-    color: #fff;
+    align-self: center;
+    color: var(--white-smoky);
     margin-bottom: 50px;
-    font-size: 12px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
     padding-top: 24px;
+    text-align: center;
   }
 
   .section-title-separators {
-    border: 0.5px solid #d3d3d3;
+    border: 0.5px solid var(--orange);
     width: 48px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -745,7 +772,7 @@ h5 {
   }
 
   .avator {
-    background-image: url(image/case-speaker-gray.png);
+    background-image: url('Image/case-speaker-gray.png');
   }
 
   .experience {
@@ -757,7 +784,8 @@ h5 {
   }
 
   .support-item .biography {
-    padding-top: 24px;
+    padding-top: 1px;
+    padding-left: 1px;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
   }
@@ -809,8 +837,19 @@ h5 {
   .footer {
     width: 80%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+  }
+
+  .full-log {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-self: center;
   }
 
   .footer-copy-right p:last-child,
@@ -840,33 +879,40 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    width: 100%;
+    margin: auto;
   }
 
-  .previous-work-list .previous-work {
-    width: 300px;
+  .previous-work {
+    width: 280px;
+    height: 200px;
     margin-left: 0;
-    margin-right: 0;
   }
 
   .footer-logo-section {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
     background-color: #272a31;
-    height: 200px;
+    height: 180px;
   }
 
-  .footer-logo-section img {
+  .footer-logo-section .footer-image {
     border: none;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 25%;
+    margin-left: 300px;
   }
 
   .footer-logo-section-para {
-    color: #fff;
-    margin-right: 30%;
+    color: var(--white-smoky);
+    margin-right: 300px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center;
   }
 
   .about-partner {
